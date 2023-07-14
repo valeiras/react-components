@@ -26,7 +26,13 @@ const Navbar = ({ sections, currSection, setCurrSection }) => {
   return (
     <nav className="navbar">
       <div className="nav-logo-container">
-        <img src={''} className="nav-logo" alt="Logo" />
+        <img
+          src={
+            'https://1000logos.net/wp-content/uploads/2021/10/Batman-Logo.png'
+          }
+          className="nav-logo"
+          alt="Logo"
+        />
       </div>
       <ul className={'nav-links' + (showLinks ? ' show-links' : '')}>
         {sections.map((section) => {
