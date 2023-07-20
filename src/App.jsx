@@ -10,9 +10,9 @@ function App() {
   const [currSection, setCurrSection] = useState(sections[0]);
   const { isLoading, isError, data: user } = useFetch(url);
 
-  // if (isLoading) {
-  return <Loading />;
-  // }
+  if (isLoading) {
+    return <Loading />;
+  }
   if (isError) {
     return <h2>There was an error...</h2>;
   }
